@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute} from '@angular/router'; ¿
-//======================Importar Servicios======================================
+//*****************Importar Servicios***********************
 import { AuthService } from "../../../services/auth.service";
 import { TiendaService} from '../../../services/tienda.service';
 import { CarritoService} from '../../../services/carrito.service';
 import { BarraSuperiorComponent  } from '../../barra-superior/barra-superior.component';
-//======================Importar Modelos========================================
+//***********************Importar Modelos***********************
 import { Producto } from '../../../models/Producto';
 import { ProductoCarrito } from '../../../models/ProductoCarrito';
-//==============================================================================
-
+//*********************************************************************
 @Component({
   selector: 'detalle-producto',
   templateUrl: './detalle-producto.component.html',
