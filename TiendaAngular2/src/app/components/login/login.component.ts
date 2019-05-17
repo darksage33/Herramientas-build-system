@@ -12,8 +12,8 @@ import { AuthService } from "../../services/auth.service";
 })
 export class LoginComponent implements OnInit {
 
-  mensaje:string; //Variable error de tipo srting
-  loginForm : FormGroup; //Variable formulario como un FormGroup
+  mensaje:string; 
+  loginForm : FormGroup; 
   items: FirebaseListObservable<any[]>;
   email : string;
   password: string;
