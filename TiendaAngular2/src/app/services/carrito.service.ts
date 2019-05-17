@@ -4,10 +4,10 @@ import { ProductoCarrito } from '../models/ProductoCarrito';
 //==============================================================================
 @Injectable()
 export class CarritoService {
-  public listaCarrito : ProductoCarrito[] = []; //Crear un arreglo de productos para almacenar los productos guardados en el carrito
-  private totales : number[]; //Arreglo numérico para almacenar los subtotales de los productos
+  public listaCarrito : ProductoCarrito[] = []; 
+  private totales : number[]; 
   constructor() {
-      this.totales = []; //Inicializar los totales
+      this.totales = []; //Inicializar totales
       this.contadorCarrito() //Verificar items en carrito
    }
 //============Verificar items en el carrito=====================================
