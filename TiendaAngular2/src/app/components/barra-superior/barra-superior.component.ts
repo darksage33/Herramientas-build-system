@@ -11,16 +11,16 @@ import { CarritoService } from '../../services/carrito.service';
   templateUrl: './barra-superior.component.html',
   styleUrls: ['./barra-superior.component.css'],
 })
-export class BarraSuperiorComponent implements OnInit { //Exportar la clase
+export class BarraSuperiorComponent implements OnInit { 
   private url : string
 
-  constructor(private auth : AuthService, //Agergar el servicio AuthService para interactuar con los parámetros de sesión
-              private carritoService : CarritoService, //Agergar el servicio CarritoService para interactuar con los items del carrito
-              private activatedRoute : ActivatedRoute //incluir el módulo ActivatedRoute para determinar el url actual
+  constructor(private auth : AuthService, 
+              private carritoService : CarritoService, 
+              private activatedRoute : ActivatedRoute 
             ) { }
 
   ngOnInit() {
-      this.url =  this.activatedRoute.snapshot.url[0].path; //Verificar el url actual
+      this.url =  this.activatedRoute.snapshot.url[0].path; 
       return this.url;
   }
 
